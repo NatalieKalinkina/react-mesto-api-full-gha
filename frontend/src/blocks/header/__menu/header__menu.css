@@ -1,0 +1,12 @@
+.header__menu {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 18px;
+  line-height: 1.22;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}

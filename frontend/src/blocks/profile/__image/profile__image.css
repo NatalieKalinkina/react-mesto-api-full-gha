@@ -1,0 +1,7 @@
+.profile__image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+  }

@@ -1,0 +1,21 @@
+.info__container {
+  width: 430px;
+  height: 330px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  padding: 60px 36px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .info__container {
+    width: 280px;
+    height: 308px;
+    padding: 50px 18px;
+  }
+}

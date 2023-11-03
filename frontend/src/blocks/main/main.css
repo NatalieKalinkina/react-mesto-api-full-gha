@@ -1,0 +1,11 @@
+.main {
+  width: 88.125%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    max-width: 282px;
+  }
+}

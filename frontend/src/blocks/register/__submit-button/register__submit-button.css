@@ -1,0 +1,26 @@
+.register__submit-button {
+  width: 358px;
+  height: 50px;
+  background-color: #fff;
+  margin: 186px auto 0;
+  border: none;
+  border-radius: 2px;
+  font-size: 18px;
+  line-height: 1.21;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .register__submit-button {
+    width: 238px;
+    height: 46px;
+    font-size: 14px;
+  }
+}
+
+.register__submit-button:hover {
+  opacity: 0.8;
+}

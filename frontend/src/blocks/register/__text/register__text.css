@@ -1,0 +1,20 @@
+.register__text {
+  margin-block-start: 0;
+  margin-block-end: 30px;
+  color: #fff;
+  background-color: #000;
+  font-size: 14px;
+  line-height: 1.21;
+  font-weight: 500;
+  padding: 0 0 9px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .register__text {
+    padding-bottom: 9.06px;
+  }
+}

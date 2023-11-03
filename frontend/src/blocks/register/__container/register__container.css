@@ -1,0 +1,14 @@
+.register__container {
+  width: 358px;
+  padding: 34px 36px 37px;
+  box-sizing: content-box;
+  position: relative;
+  margin-top: 26px;
+}
+
+@media screen and (max-width: 768px) {
+  .register__container {
+    width: 282px;
+    padding: 21px 22px 25px;
+  }
+}

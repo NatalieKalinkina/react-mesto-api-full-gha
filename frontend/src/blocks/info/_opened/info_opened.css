@@ -1,0 +1,5 @@
+.info_opened {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s ease-in-out, opacity 1s;
+}
