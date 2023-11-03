@@ -10,6 +10,7 @@ const app = express();
 app.use(cors());
 
 const auth = require('./middlewares/auth');
+const { requestLogger, errorLogger } = require('./middlewares/logger');
 const appRouter = require('./routes');
 
 const { createUser, login } = require('./controllers/users');
@@ -22,6 +23,8 @@ app.use(express.urlencoded({ extended: true }));
 mongoose.connect(MONGO_URL, {
   useNewUrlParser: true,
 });
+
+app.use(requestLogger);
 
 app.post('/signup', celebrate({
   body: Joi.object().keys({
@@ -42,6 +45,8 @@ app.post('/signin', celebrate({
 app.use(auth);
 
 app.use(appRouter);
+
+app.use(errorLogger);
 
 app.use(errors());
 
