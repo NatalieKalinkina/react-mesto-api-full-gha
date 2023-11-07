@@ -51,7 +51,7 @@ class Auth {
 }
 
 export const auth = new Auth({
-  url: 'https://nataliekalinkina.mesto.nomoredomainsmonster.ru/api/',
+  url: 'http://nataliekalinkina.mesto.nomoredomainsmonster.ru/api',
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json'

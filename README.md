@@ -11,6 +11,6 @@
 
 IP-адрес 158.160.11.71
 
-Frontend https://nataliekalinkina.mesto.nomoredomainsmonster.ru/
+Frontend https://...
 
-Backend https://nataliekalinkina.mesto.nomoredomainsmonster.ru/api/
+Backend https://...
