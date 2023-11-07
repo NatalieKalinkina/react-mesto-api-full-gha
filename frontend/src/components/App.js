@@ -141,7 +141,7 @@ function App() {
         if (res.email) {
           setIsRegisterSuccess(true);
           setInfoToolTipOpen(true);
-          navigate('/sign-in');
+          navigate('/signin');
         } else {
           setIsRegisterSuccess(false);
           setInfoToolTipOpen(true);
@@ -163,7 +163,7 @@ function App() {
     localStorage.removeItem('jwt');
     setLoggedIn(false);
     setUserEmail('');
-    navigate('/sign-in');
+    navigate('/signin');
   };
 
   useEffect(() => {
@@ -227,8 +227,8 @@ function App() {
             }
           />
 
-          <Route path="/sign-up" element={<Register onRegister={onRegister} />} />
-          <Route path="/sign-in" element={<Login onLogin={onLogin} />} />
+          <Route path="/signup" element={<Register onRegister={onRegister} />} />
+          <Route path="/signin" element={<Login onLogin={onLogin} />} />
         </Routes>
         <InfoToolTip
           isRegisterSuccess={isRegisterSuccess}
