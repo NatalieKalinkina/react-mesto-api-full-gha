@@ -5,7 +5,7 @@ class Auth {
   }
 
   register(email, password) {
-    return fetch(`${this._url}/signup`, {
+    return fetch(`${this._url}signup`, {
       method: 'POST',
       headers: this._headers,
       body: JSON.stringify({ email, password })
@@ -17,7 +17,7 @@ class Auth {
   }
 
   authorize(email, password) {
-    return fetch(`${this._url}/signin`, {
+    return fetch(`${this._url}signin`, {
       method: 'POST',
       headers: this._headers,
       body: JSON.stringify({ email, password })
@@ -32,7 +32,7 @@ class Auth {
   }
 
   checkToken(token) {
-    return fetch(`${this._url}/users/me`, {
+    return fetch(`${this._url}users/me`, {
       method: 'GET',
       headers: {
         Accept: 'application/json',
@@ -51,7 +51,7 @@ class Auth {
 }
 
 export const auth = new Auth({
-  url: 'http://nataliekalinkina.mesto.nomoredomainsmonster.ru/api',
+  url: 'https://nataliekalinkina.mesto.nomoredomainsmonster.ru/api/',
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json'
