@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.11.71
+IP 158.160.11.71
 
 Frontend https://nataliekalinkina.mesto.nomoredomainsmonster.ru
 
