@@ -9,8 +9,8 @@
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 158.160.11.71
 
-Frontend https://...
+Frontend https://nataliekalinkina.mesto.nomoredomainsmonster.ru
 
-Backend https://...
+Backend https://nataliekalinkina.mesto.nomoredomainsmonster.ru/api/
