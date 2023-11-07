@@ -119,5 +119,5 @@ class Api {
 }
 
 export const api = new Api({
-  url: 'https://nataliekalinkina.mesto.nomoredomainsmonster.ru/api'  
+  url: 'https://nataliekalinkina.mesto.nomoredomainsmonster.ru/api/'  
 });
