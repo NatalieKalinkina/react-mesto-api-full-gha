@@ -119,5 +119,5 @@ class Api {
 }
 
 export const api = new Api({
-  url: 'http://nataliekalinkina.mesto.nomoredomainsmonster.ru/api'  
+  url: 'http://localhost:3000'  
 });

@@ -51,7 +51,7 @@ class Auth {
 }
 
 export const auth = new Auth({
-  url: 'http://nataliekalinkina.mesto.nomoredomainsmonster.ru/api',
+  url: 'http://localhost:3000',
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json'

@@ -26,7 +26,7 @@ mongoose.connect(MONGO_URL, {
 
 app.use(requestLogger);
 
-app.post('/api/signup', celebrate({
+app.post('/signup', celebrate({
   body: Joi.object().keys({
     name: Joi.string().min(2).max(30),
     about: Joi.string().min(2).max(30),
@@ -35,7 +35,7 @@ app.post('/api/signup', celebrate({
     password: Joi.string().required().min(8),
   }),
 }), createUser);
-app.post('/api/signin', celebrate({
+app.post('/signin', celebrate({
   body: Joi.object().keys({
     email: Joi.string().required().email(),
     password: Joi.string().required().min(8),
@@ -44,7 +44,7 @@ app.post('/api/signin', celebrate({
 
 app.use(auth);
 
-app.use('/api/', appRouter);
+app.use(appRouter);
 
 app.use(errorLogger);
 
