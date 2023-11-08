@@ -1,3 +1,5 @@
+const { REACT_APP_API_URL } = process.env;
+
 class Auth {
   constructor(options) {
     this._url = options.url;
@@ -51,7 +53,7 @@ class Auth {
 }
 
 export const auth = new Auth({
-  url: 'https://nataliekalinkina.mesto.nomoredomainsmonster.ru/api',
+  url: REACT_APP_API_URL,
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json'

@@ -1,3 +1,5 @@
+const { REACT_APP_API_URL } = process.env;
+
 class Api {
   constructor(options) {
     this._url = options.url;
@@ -119,5 +121,5 @@ class Api {
 }
 
 export const api = new Api({
-  url: 'https://nataliekalinkina.mesto.nomoredomainsmonster.ru/api'  
+  url: REACT_APP_API_URL
 });

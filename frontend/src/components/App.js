@@ -36,13 +36,28 @@ function App() {
   const token = localStorage.getItem('jwt');
 
   React.useEffect(() => {
-    api
-      .getInitialCards()
-      .then(data => {
-        setCards(data.cards);
-      })
-      .catch(err => console.error(err));
-  }, []);
+    if (token) {
+      auth
+        .checkToken(token)
+        .then(() => {
+          api
+            .getInitialCards()
+            .then(data => {
+              setCards(data.cards);
+            })
+          })
+        .catch(err => console.error(err));
+    }
+  }, [token, navigate]);
+
+  // React.useEffect(() => {
+  //   api
+  //     .getInitialCards()
+  //     .then(data => {
+  //       setCards(data);
+  //     })
+  //     .catch(err => console.error(err));
+  // }, []);
 
   useEffect(() => {
     if (token) {
