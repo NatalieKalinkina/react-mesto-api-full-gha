@@ -48,16 +48,7 @@ function App() {
           })
         .catch(err => console.error(err));
     }
-  }, [token, navigate]);
-
-  // React.useEffect(() => {
-  //   api
-  //     .getInitialCards()
-  //     .then(data => {
-  //       setCards(data);
-  //     })
-  //     .catch(err => console.error(err));
-  // }, []);
+  }, [token]);
 
   useEffect(() => {
     if (token) {
@@ -72,7 +63,7 @@ function App() {
         })
         .catch(console.error);
     }
-  }, [token, navigate]);
+  }, [token]);
 
   function handleCardLike(card) {
     const isLiked = card.likes.some(i => i._id === currentUser._id);
@@ -241,7 +232,6 @@ function App() {
               </ProtectedRoute>
             }
           />
-
           <Route path="/signup" element={<Register onRegister={onRegister} />} />
           <Route path="/signin" element={<Login onLogin={onLogin} />} />
         </Routes>
